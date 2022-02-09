@@ -1,14 +1,82 @@
 <!-- khai báo kiểu thẻ -->
 <!DOCTYPE html>  
+<!-- CÁC THẺ THÔNG DỤNG
+    1. h1 -> h6 : thẻ heading(tiêu đề) từ h1 đến h6 chữ nhỏ dần
+
+    2. p : paragraph (đoạn văn)
+
+    3. img: image hình ảnh
+     - có hai thuộc tính:
+                    +src (soure): link ảnh
+                    +alr (alternative): một nội dung thay thế nào đó khi src bị lỗi
+
+    4.a - anchor(neo) thẻ neo(đường dẫn link) tới một trang nào đó
+
+    5. ul, li -  unordered list, list (danh sách không có thứ tự, danh sách)
+                +trong ul sẽ có các li
+                +Mẹo: li*n + tab tạo ra n danh sách n thẻ li(cho nhanh)
+
+    6.table: tạo ra các bảng
+        trong table có thẻ thead(phần đầu bảng)
+                        trong <thead> có các <th>(là tên của các cột)
+                    tiếp theo là thẻ <tbody>(phần thân bảng)
+                            trong thẻ tbody có các <tr>(table row) dòng, mỗi tr là một dòng trong bảng
+                                                    trong <tr> có các <td> tương ứng nội dung với các thẻ <th> ở trên
+
+    7.input : có thuộc tính type để khai báo kiểu nhập vào, vd type = text, radio, checkbox, ...
+
+    8.button
+
+    9.div: tạo khối bao quanh nội dung hiện thị trên web(giống kiểu lề vở)
+ -->
 <html>    
     <!-- phần đầu -->
     <head>     
        <title>F8 - Shop</title>
        <meta charset="utf-8">
     </head>
-
+    
      <!-- phần thân-->
+     
+   <div>
     <body>  
-        Xin chào các bạn!
+        <h1>Mình sẽ thành công!</h1>
+        <p>I'm sure that I will find my real love in my life!</p>
+        <img src="https://ben.com.vn/tin-tuc/wp-content/uploads/2020/09/hinh-nen-laptop-anime-min.jpg" alt="Ảnh anime">
+        <a href="https://fullstack.edu.vn/"> Go to the web teaches coding</a>
+        <ul>
+
+            <li>Mình sẽ trở thành lập trình viên giỏi</li>
+            <li>Mình sẽ làm được</li>
+            <li>Mọi thứ không gì là tự nhiên</li>
+            <li>Mình sẽ có nhiều nguồn...</li>
+        </ul>
+        <table>
+            <thead>
+                <th>Tên</th>
+                <th>Nghề</th>
+                <th>Lương</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hoàng</td>
+                    <td>LTV</td>
+                    <td>100 củ</td>
+                </tr>
+                <tr>
+                    <td>Lâm</td>
+                    <td>BDS</td>
+                    <td>80 củ</td>
+                </tr>
+                <tr>
+                    <td>Kiên</td>
+                    <td>BT</td>
+                    <td>20 củ</td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="text">
+        <button>Đăng ký</button>
     </body>
+   </div>
 </html>
